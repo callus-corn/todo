@@ -44,6 +44,8 @@ func show(w http.ResponseWriter, r *http.Request) {
 
 	fmt.Fprintf(w, "<div id=\"title\">メモ</div>")
 
+	fmt.Fprintf(w, "<ul id=\"LR\">")
+	fmt.Fprintf(w, "<li id=\"L\">")
 	fmt.Fprintf(w, "<ul class=\"member-list\">")
 	for index, v := range files {
 		if index > 1 {
@@ -82,7 +84,9 @@ func show(w http.ResponseWriter, r *http.Request) {
 		fmt.Fprintf(w, "</li>")
 	}
 	fmt.Fprintf(w, "</ul>")
+	fmt.Fprintf(w, "</li>")
 
+	fmt.Fprintf(w, "<li id=\"R\">")
 	fmt.Fprintf(w, "<ul class=\"member-list\">")
 	for index, v := range files {
 		if index < 2 {
@@ -162,6 +166,8 @@ func show(w http.ResponseWriter, r *http.Request) {
 		fmt.Fprintf(w, "</ol>")
 		fmt.Fprintf(w, "</li>")
 	}
+	fmt.Fprintf(w, "</ul>")
+	fmt.Fprintf(w, "</li>")
 	fmt.Fprintf(w, "</ul>")
 
 	fmt.Fprintf(w, "</body>")

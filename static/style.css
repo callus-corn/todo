@@ -1,12 +1,19 @@
 * {
   margin: 0px;
   padding: 0px;
+  font-size: 10.5px;
 }
 body {
   background-color: #e6e6e6;
   background-image: url(http://localhost/static/back.png);
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+#LR {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-wrap: wrap;
 }
 
 #title {
