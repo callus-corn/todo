@@ -1,0 +1,42 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  background-color: #e6e6e6;
+  background-image: url(http://localhost/static/back.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#title {
+  padding: 0.5em;
+  font-weight: bold;
+  background-color: #000000;
+  color: #e6e6e6;
+}
+
+.member-list {
+    display: flex;
+    align-items: flex-start;
+}
+
+.member {
+  border: solid;
+  margin: 10px;
+  min-width: 18em;
+  list-style-type:none;
+  background-color: #000000;
+  opacity: 65%;
+}
+
+div {
+  text-align: center;
+  color: #ffffff;
+}
+
+.task {
+  margin-left: 2em;
+  color: #ffffff;
+}
+
