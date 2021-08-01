@@ -3,7 +3,6 @@ package main
 import (
 	"fmt"
 	"io/ioutil"
-	"log"
 	"net/http"
 	"os"
 	"strconv"
@@ -182,7 +181,6 @@ func add(w http.ResponseWriter, r *http.Request) {
 	file, err := os.OpenFile("data/"+target, os.O_APPEND|os.O_WRONLY, 0600)
 	if err != nil {
 		fmt.Fprintf(w, "タスク追加にエラーが発生しました")
-		log.Fatal(err)
 	}
 	defer file.Close()
 
