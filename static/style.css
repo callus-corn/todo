@@ -1,32 +1,45 @@
 * {
   margin: 0px;
   padding: 0px;
-  font-size: 10.5px;
+  font-size: 16px;
 }
+
 body {
   background-color: #e6e6e6;
-  background-image: url(http://localhost/static/back.png);
+  background-image: url(http://18.217.133.253/static/back.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-#LR {
-  display: flex;
-}
-
 #title {
+  text-align: center;
   padding: 0.5em;
   font-weight: bold;
   background-color: #000000;
   color: #e6e6e6;
 }
 
-.member-list {
-    display: flex;
-    align-items: flex-start;
+#LR {
+  display: flex;
+  list-style-type: none;
 }
 
-.member {
+#L {}
+#R {}
+
+#todo-list {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+}
+
+#member-list {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.todo {
   border: solid;
   margin: 10px;
   min-width: 18em;
@@ -35,9 +48,12 @@ body {
   opacity: 65%;
 }
 
-div {
+.name {
   text-align: center;
   color: #ffffff;
+}
+
+.task-list {
 }
 
 .task {
